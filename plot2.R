@@ -20,7 +20,8 @@
 #   1. Test if data file exists, if not exists try to download and unzip
 #   2. Load data into dataframe
 #   3. Subset data to 1/2/2007 and 2/2/2007
-#   4. Create histogram plot in a png file for Global Active Power
+#   4. Create a DateTime column from character columns Date and Time
+#   5. Create plot in a png file for Global Active Power by date
 #      
 #
 ################################################################################
@@ -62,15 +63,18 @@ data <- read.csv(file = data_filename, header = T, sep = ";", na.strings = "?",
 # subset data to 1/2/2007 and 2/2/2007
 data <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
 
+# create a DateTime column from character columns Date and Time
+data$DateTime <- strptime(paste(data$Date,data$Time), format="%d/%m/%Y %H:%M:%S")
+
 # setting labels and colors
 mlabel <- "Global Active Power"
 ylabel <- "Global Active Power (kilowatts)"
 barcolor <- "red"
 
 # open PNG file
-png(filename="plot1.png", width = 480, height = 480, units = "px")
+png(filename="plot2.png", width = 480, height = 480, units = "px")
 
-# draw plot
+# draw histogram
 plot(data$DateTime, data$Global_active_power, type = "l", xlab = "", ylab = ylabel)
 
 # close file
