@@ -1,6 +1,6 @@
 ################################################################################
 #
-#   Coursera Exploratory Data Analysis Course Project 1
+#   Coursera Exploratory Data Analysis Course Project 1 - plot 1
 #   Tony G. Bolaño
 #   April 2015
 #

@@ -1,6 +1,6 @@
 ################################################################################
 #
-#   Coursera Exploratory Data Analysis Course Project 1
+#   Coursera Exploratory Data Analysis Course Project 1 - plot 2
 #   Tony G. Bolaño
 #   April 2015
 #
@@ -74,7 +74,7 @@ barcolor <- "red"
 # open PNG file
 png(filename="plot2.png", width = 480, height = 480, units = "px")
 
-# draw histogram
+# draw plot
 plot(data$DateTime, data$Global_active_power, type = "l", xlab = "", ylab = ylabel)
 
 # close file
