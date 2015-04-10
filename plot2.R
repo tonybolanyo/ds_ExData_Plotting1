@@ -3,6 +3,7 @@
 #   Coursera Exploratory Data Analysis Course Project 1 - plot 2
 #   Tony G. Bolaño
 #   April 2015
+#   Github repository: https://github.com/tonybolanyo/ds_ExData_Plotting1
 #
 #   This assignment uses data from the UC Irvine Machine Learning Repository,
 #   a popular repository for machine learning datasets. In particular, we will 
@@ -21,7 +22,7 @@
 #   2. Load data into dataframe
 #   3. Subset data to 1/2/2007 and 2/2/2007
 #   4. Create a DateTime column from character columns Date and Time
-#   5. Create plot in a png file for Global Active Power by date
+#   5. Create plot in a png file for Global Active Power by date and time
 #      
 #
 ################################################################################

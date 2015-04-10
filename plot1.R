@@ -3,6 +3,7 @@
 #   Coursera Exploratory Data Analysis Course Project 1 - plot 1
 #   Tony G. Bolaño
 #   April 2015
+#   Github repository: https://github.com/tonybolanyo/ds_ExData_Plotting1
 #
 #   This assignment uses data from the UC Irvine Machine Learning Repository,
 #   a popular repository for machine learning datasets. In particular, we will 
