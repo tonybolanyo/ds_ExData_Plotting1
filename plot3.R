@@ -21,7 +21,7 @@
 #   2. Load data into dataframe
 #   3. Subset data to 1/2/2007 and 2/2/2007
 #   4. Create a DateTime column from character columns Date and Time
-#   5. Create plot in a png file for Global Active Power by date
+#   5. Create plot in a png file for Energy sub metering three series
 #      
 #
 ################################################################################
