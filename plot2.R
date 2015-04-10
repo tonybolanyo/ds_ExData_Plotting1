@@ -1,7 +1,7 @@
 ################################################################################
 #
 #   Coursera Exploratory Data Analysis Course Project 1 - plot 2
-#   Tony G. Bolaño
+#   Tony G. Bolaqo
 #   April 2015
 #   Github repository: https://github.com/tonybolanyo/ds_ExData_Plotting1
 #
@@ -65,6 +65,9 @@ data <- read.csv(file = data_filename, header = T, sep = ";", na.strings = "?",
 data <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
 
 # create a DateTime column from character columns Date and Time
+# we need change locale settings so date labels are printed in english
+# see: https://class.coursera.org/exdata-013/forum/thread?thread_id=13
+Sys.setlocale("LC_ALL","C")
 data$DateTime <- strptime(paste(data$Date,data$Time), format="%d/%m/%Y %H:%M:%S")
 
 # setting labels and colors
