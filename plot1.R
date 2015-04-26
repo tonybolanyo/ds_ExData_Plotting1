@@ -1,7 +1,7 @@
 ################################################################################
 #
 #   Coursera Exploratory Data Analysis Course Project 1 - plot 1
-#   Tony G. Bolaño
+#   Tony G. BolaÃ±o
 #   April 2015
 #   Github repository: https://github.com/tonybolanyo/ds_ExData_Plotting1
 #
@@ -65,14 +65,14 @@ data <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
 
 # setting labels and colors
 mlabel <- "Global Active Power"
-ylabel <- "Global Active Power (kilowatts)"
+xlabel <- "Global Active Power (kilowatts)"
 barcolor <- "red"
-
-# open PNG file
+ 		 
+# open PNG file		 # open PNG file
 png(filename="plot1.png", width = 480, height = 480, units = "px")
 
-# draw plot
-plot(data$DateTime, data$Global_active_power, type = "l", xlab = "", ylab = ylabel)
+# draw histogram
+hist(data$Global_active_power, main = mlabel, xlab = xlabel, col = barcolor)
 
 # close file
 dev.off()
